@@ -1,0 +1,103 @@
+.Personas {
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+
+    .empty {
+        text-align: center;
+        color: #aaa;
+        font-size: 14px;
+
+        svg {
+            font-size: 20px;
+            vertical-align: middle;
+        }
+    }
+
+    .persona {
+        margin: 0 12px 12px;
+
+        .persona-image {
+            display: inline-block;
+            position: relative;
+            height: 100px;
+            width: 100px;
+            // background:#ddd;
+            border: 2px solid #fff;
+
+            svg {
+                position: absolute;
+                top: 40%;
+                left: 44%;
+                color: #aaa;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 12px;
+                filter: grayscale(1) brightness(1.5) contrast(0.5);
+            }
+        }
+
+        .persona-info {
+            display: inline-block;
+            width: 100px;
+            vertical-align: top;
+            font-size: 12px;
+            padding-left: 8px;
+            color: #ccc;
+
+            .infoblock {}
+
+            .name {
+                font-weight: 700;
+                font-size: 1.3em;
+                margin-bottom:4px;
+                .online {
+                    color: #D21F18;
+                    font-weight: 400;
+                    font-size: 8px;
+                    padding: 0px 1px;
+                    vertical-align: middle;
+                }
+            }
+
+            .age {}
+
+            .gender {}
+
+            .occupation {}
+        }
+    }
+
+    .persona.active {
+        .persona-image {
+            img {
+                // box-shadow:0 0 0px 3px #D21F18;
+                filter: none;
+            }
+        }
+
+        .persona-info {
+            color: #333;
+
+            .name {
+                color: #D21F18;
+
+                .online {
+                    color: #D21F18;
+                    font-weight: 400;
+                    font-size: 8px;
+                    padding: 0px 1px;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+
+    }
+}

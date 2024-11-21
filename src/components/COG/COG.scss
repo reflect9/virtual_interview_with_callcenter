@@ -1,0 +1,54 @@
+.COG {
+    .criteria {
+        font-size:14px;
+        margin:0 8px;
+        .COG-section-title {
+            display:inline-block;
+            font-weight:700;
+            color:#999;
+            margin-right:12px;
+        }
+        .criterion {
+            display:inline-block;
+            border-radius:8px;
+            background:#eee;
+            color:#666;
+            margin-right:8px;
+            padding:4px 8px;
+            .category {
+
+            }
+            .description {
+
+            }
+        }
+    }
+    .persona_description {
+        margin:12px 8px;
+        // padding:8px; 
+        // border-radius:8px;
+        // border:1px solid #eee;
+        font-size:0.9em;
+        color:#333;
+        line-height:1.5em;
+        word-break: keep-all;
+    }
+    .persona_keywords {
+        margin:12px 8px;
+        font-size:11px;
+        color:#333;
+        .keyword {
+            display:inline-block;
+            border-radius:8px;
+            background:#eee;
+            color:#666;
+            margin-right:6px;
+            line-height:1em;
+            margin-bottom:4px;
+            padding:2px 4px;
+            span {
+                margin:0;
+            }
+        }
+    }
+}

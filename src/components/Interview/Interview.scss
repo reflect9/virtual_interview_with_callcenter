@@ -1,0 +1,118 @@
+.Interview {
+    border:1px solid #ddd;
+    margin:8px 12px;
+    padding:16px 0px;
+    border-radius:12px;
+    .Interview-body {
+        .dialogues{
+            display:block;
+            font-size:14px;
+            min-height:400px;
+            .dialogue {
+                position:relative;
+                // padding:8px;
+                .question {
+                    display:block;
+                    text-align:left;
+                    font-size: 1.5em;
+                    margin:16px;
+                    .bubble {
+                        display:block;
+                        padding:8px 16px;
+                        border-radius:12px;
+                        background:#D21F18;
+                        color:white;
+                        font-weight:500;
+                        .deleteQuestion {
+                            float:right;
+                            font-size:24px;
+                            vertical-align: middle;
+                            color:white;
+                            // margin-right:8px;
+                            display:inline;
+                            cursor:pointer;
+                            &:hover {
+                                color:black;
+                            }
+                        }
+                    }
+                }
+                .answers { // 해당 질문에 대한 모든 페르소나의 답변들
+                    display:block;
+                    margin:16px;
+                    padding-right:32px;
+                    .answer {
+                        display:flex;
+                        flex-direction: row;
+                        gap:8px;
+                        width:100%;
+                        text-align:left;
+                        margin-bottom:8px;
+                        .persona {
+                            flex:0 1;
+                            padding-top:8px;
+                            font-weight:700;
+                            font-size:12px;
+                            color:#D21F18;
+                            .profile_image {
+                                display:block;
+                                position:relative;
+                                height:32px; width:32px;
+                                overflow: hidden;
+                                border:2px solid #fff;
+                                svg{
+                                    position: absolute;
+                                    top: 40%;
+                                    left: 44%;
+                                    color:#aaa;
+                                }
+                                img {
+                                    width:100%;
+                                    height:100%;
+                                    object-fit: cover;
+                                    border-radius:50%;
+                                }
+                            }
+                        }
+                        .bubble {
+                            flex:1 0;
+                            padding:8px 12px;
+                            font-size:13px;
+                            line-height: 1.5em;
+                            border-radius:12px;
+                            background:#eee;
+                            white-space: pre-line;
+                        }
+                    }
+                    // padding:16px;
+                }
+            }
+            .dialogue:hover {
+                .analyzeDialogue {
+                    .questionButton {
+                        display:block;
+                        &:hover {
+                            color:#D21F18;
+                        }
+                    }
+                }
+            }
+        }
+        .newQuestion {
+            margin-top:12px;
+            // border-top:1px solid #ddd;
+            padding:16px 16px 0;
+            input {
+                width:calc(100% - 16px);
+                padding:8px;
+                border: 1px solid #ddd;
+                border-radius:8px;
+            }
+            button{}
+        }
+        .spinner_generatingDialogue {
+            margin:12px;
+        }
+    }
+    
+}
