@@ -84,7 +84,7 @@ function App() {
 
 	const askQuestion = async (question) => {
 		console.log("QUESTION: " + question);
-		const system_part = `인터뷰 대화임. Claude는 참가자 입장에서 질문에 답할것. \n`;
+		const system_part = `This is a regular chat with a call center manager. Answer honestly and straightforwardly to the manager's question.\n`;
 		setIsGeneratingDialogues(true); // 대화 생성 중임을 알림
 		let responseDict = {};
 		let promiseArray = []; // 모든 페르소나가 질문에 답하면 다음으로 넘어가기 위한 promise 배열
